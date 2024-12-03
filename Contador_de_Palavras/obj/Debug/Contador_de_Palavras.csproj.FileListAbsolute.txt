@@ -1,0 +1,7 @@
+C:\Users\Danielle\Desktop\Contador_de_Palavras\bin\Debug\Contador_de_Palavras.exe.config
+C:\Users\Danielle\Desktop\Contador_de_Palavras\bin\Debug\Contador_de_Palavras.exe
+C:\Users\Danielle\Desktop\Contador_de_Palavras\bin\Debug\Contador_de_Palavras.pdb
+C:\Users\Danielle\Desktop\Contador_de_Palavras\obj\Debug\Contador_de_Palavras.csproj.AssemblyReference.cache
+C:\Users\Danielle\Desktop\Contador_de_Palavras\obj\Debug\Contador_de_Palavras.csproj.CoreCompileInputs.cache
+C:\Users\Danielle\Desktop\Contador_de_Palavras\obj\Debug\Contador_de_Palavras.exe
+C:\Users\Danielle\Desktop\Contador_de_Palavras\obj\Debug\Contador_de_Palavras.pdb
