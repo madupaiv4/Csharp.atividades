@@ -45,9 +45,12 @@ namespace teste
 
                     default:
                         Console.WriteLine("Opção inválida!");
+                        Console.Clear();
                         break;
                 }
             } while (opcao != "4");
+
+            System.Diagnostics.Process.Start("notepad.exe", filePath);
         }
 
 
@@ -60,7 +63,7 @@ namespace teste
             string nota = Console.ReadLine();
 
 
-            using (StreamWriter writer = new StreamWriter(filePath, true))
+            using (StreamWriter writer = new StreamWriter(filePath))
             {
 
                 writer.WriteLine($"{nome}: {nota}");
