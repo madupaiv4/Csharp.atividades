@@ -45,6 +45,7 @@ namespace teste
 
                     default:
                         Console.WriteLine("Opção inválida!");
+                        Console.ReadKey();
                         Console.Clear();
                         break;
                 }
