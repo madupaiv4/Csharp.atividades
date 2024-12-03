@@ -1,2 +1,9 @@
 C:\Users\eduar\OneDrive\Área de Trabalho\teste\obj\Debug\teste.csproj.AssemblyReference.cache
 C:\Users\eduar\OneDrive\Área de Trabalho\teste\obj\Debug\teste.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\teste\bin\Debug\teste.exe.config
+C:\Users\aluno\Desktop\teste\bin\Debug\teste.exe
+C:\Users\aluno\Desktop\teste\bin\Debug\teste.pdb
+C:\Users\aluno\Desktop\teste\obj\Debug\teste.csproj.AssemblyReference.cache
+C:\Users\aluno\Desktop\teste\obj\Debug\teste.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\teste\obj\Debug\teste.exe
+C:\Users\aluno\Desktop\teste\obj\Debug\teste.pdb

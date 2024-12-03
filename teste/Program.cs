@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Runtime.Remoting.Messaging;
 
 namespace teste
 {
@@ -52,6 +53,7 @@ namespace teste
 
         static void AdicionarNota(string filePath)
         {
+            Console.WriteLine("\n Adicionando notas... \n ");
             Console.WriteLine("Digite o nome do(a) aluno(a): ");
             string nome = Console.ReadLine();
             Console.WriteLine("Digite a nota do(a) aluno(a): ");
@@ -65,17 +67,19 @@ namespace teste
 
             }
 
-            Console.WriteLine("Dados adicionados com sucesso!");
-
+            Console.WriteLine("\nDados adicionados com sucesso!");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         static void ExibirNotas (string filePath)
         {
-            if(File.Exists(filePath))
+            Console.WriteLine("\n Notas do sistema \n ");
+            if (File.Exists(filePath))
             {
-                string[] file = FileReadAllLines(filePath);
+                string[] linhas = File.ReadAllLines(filePath);
 
-                foreach (string linha in file)
+                foreach (string linha in linhas)
                 {
                     Console.WriteLine(linha);
                 }
@@ -84,32 +88,35 @@ namespace teste
             {
                 Console.WriteLine("Arquivo não encontrado");
             }
-
+            Console.ReadKey();
+            Console.Clear();
 
         }
 
         static void BuscarNota (string filePath)
         {
-            Console.Write("Digite o nome do aluno:");
+            Console.WriteLine("\n Buscando alunos... \n ");
+            Console.WriteLine("Digite o nome do aluno: ");
             string nome = Console.ReadLine();
-            bool encontrando = false;
+            bool encontrado = false;
 
             if ( File.Exists(filePath))
             {
-                using(StreamReader reader = nem StreamReader(filePath))
+                using(StreamReader reader = new StreamReader(filePath))
                 {
-                    string line;
-                    while ((line = reader.ReadLine) != null)
+                    string linha;
+                    while ((linha = reader.ReadLine()) != null)
                     {
-                        if (line.StartsWith(nome + ":"))
+                        if (linha.StartsWith(nome + ":"))
                         {
-                            Console.WriteLine(line);
+                            Console.WriteLine(linha);
                             encontrado = true;
                             break;
                         }
                     }
                 }
-                if (!encotrado)
+
+                if (!encontrado)
                 {
                     Console.WriteLine("Aluno não encontrado.");
                 }
@@ -118,7 +125,8 @@ namespace teste
             {
                 Console.WriteLine("Nenhuma nota registrada.");
             }
-           
+            Console.ReadKey();
+            Console.Clear();
         }
 
 
